@@ -6,7 +6,7 @@ function App() {
   const [heading, setHeading] = useState("Magnificent Monkeys")
 
   function handleClick() {
-    setHeading("Radical Rhinos")
+    setHeading("Radical Rhino")
   }
 
   return (

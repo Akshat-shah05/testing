@@ -7,7 +7,7 @@ describe("App component", () => {
     const { container } = render(<App />)
     expect(container).toMatchSnapshot()
   })
-  
+
   it("renders radical rhinos after button click", async () => {
     const user = userEvent.setup();
 
@@ -16,6 +16,6 @@ describe("App component", () => {
 
     await user.click(button);
 
-    expect(screen.getByRole("heading").textContent).toMatch(/radical rhinos/i);
+    expect(screen.getByRole("heading").textContent).toMatch(/radical rhino/i);
   });
 })
